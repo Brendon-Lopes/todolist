@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background-color: skyblue;
+  height: fit-content;
+}
+
+main {
+  width: 80%;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 15px 15px 15px 15px;
+  background-color: whitesmoke;
+}
+
+header {
+  color: rgb(40, 40, 146);
+  margin: 25px;
+  margin-top: 30px;
+  margin-bottom: 2px;
+  font-size: 24px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  margin-left: 25px;
+  font-family: sans-serif;
+  font-style: italic;
+  font-size: 13px;
+  color: rgb(63, 63, 63);
+  margin-bottom: 15px;
+}
+
+input[type=text] {
+  outline: none;
+  box-sizing: border-box;
+  font-size: 12px;
+  width: 30%;
+  margin-left: 25px;
+  padding: 4px;
+  border-bottom: 1.5px solid whitesmoke;
+  background-color: whitesmoke;
+  transition: width 0.4s ease-in-out;
+  border-bottom: 1.5px solid rgba(40, 40, 146, 0.315);
+}
+
+/* animação do botão e input de texto inspiradas em tutoriais do w3schools */
+input[type=text]:focus {
+  width: 80%;
+  border-bottom: 1.5px solid rgba(40, 40, 146, 0.781);
+  transition: 0.5s;
+}
+
+ol {
+  list-style-position: inside;
+  margin-top: 10px;
+  line-height: 20px;
+}
+
+button {
+  color: whitesmoke;
+  font-size: 12px;
+  padding: 4px 7px;
+  border-radius: 10px 10px;
+  background-color: rgb(63, 107, 189);
+  box-shadow: 0 2px rgba(64, 67, 75, 0.753);
+}
+
+/* animação do botão e input de texto inspiradas em tutoriais do w3schools */
+button:active {
+  box-shadow: 0 1px rgb(64, 67, 75);
+  transform: translateY(1px);
+}
+
+button:hover {
+  background-color: rgb(35, 81, 168);
+  cursor: pointer;
+}
+
+ol {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.gray {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+.bottom-buttons {
+  margin-left: 5px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+#criar-tarefa {
+  float: right;
+  margin-right: 5%;
+}
+
+#mover-cima {
+  margin-left: 25px;
+}
+
+#apaga-tudo {
+  background-color: rgb(244, 67, 54);
+}
+
+#apaga-tudo:hover {
+  background-color: rgb(216, 50, 38);
+}
+
+#remover-finalizados {
+  background-color: rgb(244, 114, 54);
+}
+
+#remover-finalizados:hover {
+  background-color: rgb(212, 83, 22);
+}
+
+#salvar-tarefas {
+  background-color: green;
+}
+
+#salvar-tarefas:hover {
+  background-color: rgb(0, 92, 0);
+}
+
+#remover-selecionado {
+  background-color: gray;
+}
+
+#remover-selecionado:hover {
+  background-color: rgb(94, 94, 94);
+}
